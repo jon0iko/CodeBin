@@ -1,0 +1,1 @@
+{"name":"Local: stringTest","url":"/home/nillohit/Desktop/Code/stringTest.c","tests":[{"id":1694168246360,"input":"Earth","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/nillohit/Desktop/Code/stringTest.c","group":"local","local":true}

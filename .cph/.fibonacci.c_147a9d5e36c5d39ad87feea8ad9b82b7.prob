@@ -1,0 +1,1 @@
+{"name":"Local: fibonacci","url":"/home/nillohit/Desktop/Code/fibonacci.c","tests":[{"id":1694271003071,"input":"1","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/nillohit/Desktop/Code/fibonacci.c","group":"local","local":true}

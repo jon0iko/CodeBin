@@ -1,0 +1,1 @@
+{"name":"Local: anagram","url":"/home/nillohit/Desktop/Code/anagram.c","tests":[{"id":1696095407664,"input":"listen\nsilene","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/nillohit/Desktop/Code/anagram.c","group":"local","local":true}

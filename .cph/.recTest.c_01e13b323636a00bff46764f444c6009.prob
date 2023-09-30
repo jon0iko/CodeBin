@@ -1,0 +1,1 @@
+{"name":"Local: recTest","url":"/home/nillohit/Desktop/Code/recTest.c","tests":[{"id":1696064947498,"input":"5\n69 87 45 21 47","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/nillohit/Desktop/Code/recTest.c","group":"local","local":true}

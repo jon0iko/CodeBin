@@ -1,0 +1,1 @@
+{"name":"Local: palindromeR","url":"/home/nillohit/Desktop/Code/palindromeR.c","tests":[{"id":1696101618247,"input":"madam, i'm adam\n","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/nillohit/Desktop/Code/palindromeR.c","group":"local","local":true}

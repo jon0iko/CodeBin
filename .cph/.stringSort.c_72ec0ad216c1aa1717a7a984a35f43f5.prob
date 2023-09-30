@@ -1,0 +1,1 @@
+{"name":"Local: stringSort","url":"/home/nillohit/Desktop/Code/stringSort.c","tests":[{"id":1694185735342,"input":"7\ncat\nbat\nwater\ndog\nfish\nNabarun\nBhattacharya","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/nillohit/Desktop/Code/stringSort.c","group":"local","local":true}
