@@ -1,0 +1,1 @@
+{"name":"Local: stringMatching","url":"/home/nillohit/Desktop/Code/cses/stringMatching.c","tests":[{"id":1696577556214,"input":"abaaabaa\naaba","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/nillohit/Desktop/Code/cses/stringMatching.c","group":"local","local":true}

@@ -53,7 +53,6 @@ int main()
 {
     char a[50],b[50];
     scanf("%s", a);
-    getchar();
     scanf("%s", b);
 
     if(check(a,b)) printf("Yes");

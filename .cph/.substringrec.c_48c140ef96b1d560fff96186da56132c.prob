@@ -1,1 +1,1 @@
-{"name":"Local: substringrec","url":"/home/nillohit/Desktop/Code/substringrec.c","tests":[{"id":1696047715079,"input":"hagu","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/nillohit/Desktop/Code/substringrec.c","group":"local","local":true}
+{"name":"Local: substringrec","url":"/home/nillohit/Desktop/Code/substringrec.c","tests":[{"id":1696047715079,"input":"abc","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/nillohit/Desktop/Code/substringrec.c","group":"local","local":true}
