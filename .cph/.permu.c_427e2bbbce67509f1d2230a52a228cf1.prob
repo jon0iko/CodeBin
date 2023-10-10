@@ -1,0 +1,1 @@
+{"name":"Local: permu","url":"/home/nillohit/Desktop/Code/permu.c","tests":[{"id":1696769955437,"input":"3\na\nbc\nbc","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/nillohit/Desktop/Code/permu.c","group":"local","local":true}

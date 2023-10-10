@@ -1,0 +1,1 @@
+{"name":"Local: bigsub","url":"/home/nillohit/Desktop/Code/bigsub.c","tests":[{"id":1696903022679,"input":"23\n11223","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/nillohit/Desktop/Code/bigsub.c","group":"local","local":true}
