@@ -1,0 +1,1 @@
+{"name":"Local: bb","url":"/home/nillohit/Desktop/Code/23_Evaluations/InCourse/bb.c","tests":[{"id":1698432946466,"input":"2 3\n5 3\n1 1\n3 0\n4 2","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/nillohit/Desktop/Code/23_Evaluations/InCourse/bb.c","group":"local","local":true}

@@ -1,0 +1,1 @@
+{"name":"Local: aloostring","url":"/home/nillohit/Desktop/Code/23_Evaluations/InCourse/aloostring.c","tests":[{"id":1697620769080,"input":"2\nABCabc\nABCabc","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/nillohit/Desktop/Code/23_Evaluations/InCourse/aloostring.c","group":"local","local":true}

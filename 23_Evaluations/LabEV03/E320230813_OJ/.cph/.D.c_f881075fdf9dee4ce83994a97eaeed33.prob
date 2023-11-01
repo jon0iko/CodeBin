@@ -1,0 +1,1 @@
+{"name":"Local: D","url":"/home/nillohit/Desktop/23/LabEV03/E320230813_OJ/D.c","tests":[{"id":1692347634024,"input":"4 3\n1234 10 23 765\nInsert 1000\nDelete 23\nSearch 1000","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/nillohit/Desktop/23/LabEV03/E320230813_OJ/D.c","group":"local","local":true}
