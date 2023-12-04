@@ -19,9 +19,9 @@ void insSort(int a[], int n)
 
 int main()
 {
-    int a[] = {9, 5, 7, 3, 8};
-    insSort(a, 5);
-    for (int i = 0; i < 5; i++)
+    int a[] = {9, 5};
+    insSort(a, 2);
+    for (int i = 0; i < 2; i++)
     {
         printf("a[%d] = %d\n", i, a[i]);
     }

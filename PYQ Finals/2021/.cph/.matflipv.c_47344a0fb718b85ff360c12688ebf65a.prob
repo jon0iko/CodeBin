@@ -1,0 +1,1 @@
+{"name":"Local: matflipv","url":"/home/nillohit/Desktop/Code/PYQ Finals/2021/matflipv.c","tests":[{"id":1701616005418,"input":"4\n1 2 3 10\n4 5 6 11\n7 8 9 12\n13 14 15 16","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/nillohit/Desktop/Code/PYQ Finals/2021/matflipv.c","group":"local","local":true}

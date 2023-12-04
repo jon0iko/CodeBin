@@ -1,98 +1,42 @@
 #include <stdio.h>
 #include <string.h>
+#include <ctype.h>
 
-void printDigit(char digit) {
-    char digits[10][5][3] = {
-        {
-            " * ",
-            "* *",
-            "* *",
-            "* *",
-            " * "
-        },
-        {
-            "   ",
-            "  *",
-            "   ",
-            "  *",
-            "   "
-        },
-        {
-            " * ",
-            "  *",
-            " * ",
-            "*  ",
-            " * "
-        },
-        {
-            " * ",
-            "  *",
-            " * ",
-            "  *",
-            " * "
-        },
-        {
-            "   ",
-            "* *",
-            " * ",
-            "  *",
-            "   "
-        },
-        {
-            " * ",
-            "*  ",
-            " * ",
-            "  *",
-            " * "
-        },
-        {
-            " * ",
-            "*  ",
-            " * ",
-            "* *",
-            " * "
-        },
-        {
-            " * ",
-            "  *",
-            "   ",
-            "  *",
-            "   "
-        },
-        {
-            " * ",
-            "* *",
-            " * ",
-            "* *",
-            " * "
-        },
-        {
-            " * ",
-            "* *",
-            "   ",
-            "  *",
-            "   "
+// Function to count vowels in a word
+int countVowels(const char *word) {
+    int vowels = 0;
+    for (int i = 0; word[i] != '\0'; i++) {
+        char ch = tolower(word[i]);
+        if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u') {
+            vowels++;
         }
-    };
+    }
+    return vowels;
+}
 
-    int index = digit - '0';
+// Function to print words with equal vowels and consonants
+void printEqualVowelsAndConsonants(const char *sentence) {
+    const char *delimiters = " \t\n";
+    char *token = strtok((char *)sentence, delimiters);
 
-    for (int i = 0; i < 5; i++) {
-        printf("%s", digits[index][i]);
+    while (token != NULL) {
+        int vowels = countVowels(token);
+        int consonants = strlen(token) - vowels;
+
+        if (vowels == consonants) {
+            printf("%s ", token);
+        }
+
+        token = strtok(NULL, delimiters);
     }
 }
 
 int main() {
-    char str[100];
+    char input[100];
 
-    printf("Enter an integer: ");
-    scanf("%s", str);
+    fgets(input, sizeof(input), stdin);
 
-    for (int i = 0; i < strlen(str); i++) {
-        printDigit(str[i]);
-    }
-    
-    printf("\n");
+    printEqualVowelsAndConsonants(input);
 
     return 0;
 }

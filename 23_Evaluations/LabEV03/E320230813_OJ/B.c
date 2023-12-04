@@ -7,11 +7,12 @@ int main()
 {
     double n;
     scanf("%lf", &n);
-    double start = 1.0, end = n, close = 0.0000000001;
+    double start = 1.0, end = n, close = 1E-9;
+    double mid = (start + end) / 2;
     while (end - start > close)
     {
-        double mid = (start + end) / 2;
-        if (mid * mid > n)
+        mid = (start + end) / 2;
+        if (n < mid * mid)
         {
             end = mid;
         }
@@ -20,6 +21,6 @@ int main()
             start = mid;
         }
     }
-    printf("%.6lf\n", (start + end) / 2);
+    printf("%.6lf\n", mid);
     return 0;
 }

@@ -5,7 +5,7 @@ typedef long long int lli;
 
 int SearchR(int a[], int k, int s, int e)
 {
-    int mid = s + (s - e) / 2;
+    int mid = s + (e - s) / 2;
     if (a[mid] == k)
     {
         return mid;
@@ -34,12 +34,9 @@ int Search(int a[], int n, int x)
     while (low < high)
     {
         int mid = (low + high) / 2;
-        if (x == a[mid])
-            return mid;
-        else if (x > a[mid])
-            low = mid + 1;
-        else 
-            high = mid - 1;
+        if (x == a[mid]) return mid;
+        else if (x > a[mid]) low = mid + 1;
+        else high = mid - 1;
     }
 
     return -1;
@@ -49,6 +46,6 @@ int main()
 {
     int a[] = {1, 3, 4, 6, 8, 9};
     int n = sizeof(a) / sizeof(a[0]);
-    printf("%d\n", Search(a, n, 6));
+    printf("%d\n", SearchR(a, 6, 0, n));
     return 0;
 }

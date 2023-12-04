@@ -1,0 +1,1 @@
+{"name":"Local: DateStruct","url":"/home/nillohit/Desktop/Code/DateStruct.cpp","tests":[{"id":1701593873418,"input":"1-12-2023\n3-12-2023","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/nillohit/Desktop/Code/DateStruct.cpp","group":"local","local":true}

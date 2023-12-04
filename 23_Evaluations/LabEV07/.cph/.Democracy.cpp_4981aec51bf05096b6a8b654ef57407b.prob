@@ -1,0 +1,1 @@
+{"name":"Local: Democracy","url":"/home/nillohit/Desktop/Code/23_Evaluations/LabEV07/Democracy.cpp","tests":[{"id":1699762541022,"input":"3\nAbb\nAbc\nabc","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/nillohit/Desktop/Code/23_Evaluations/LabEV07/Democracy.cpp","group":"local","local":true}

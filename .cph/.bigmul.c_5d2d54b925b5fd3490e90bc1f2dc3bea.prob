@@ -1,0 +1,1 @@
+{"name":"Local: bigmul","url":"/home/nillohit/Desktop/Code/bigmul.c","tests":[{"id":1701534471925,"input":"134\n7","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/nillohit/Desktop/Code/bigmul.c","group":"local","local":true}

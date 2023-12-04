@@ -1,0 +1,1 @@
+{"name":"Local: sortfour","url":"/home/nillohit/Desktop/Code/sortfour.c","tests":[{"id":1701621181364,"input":"9 6 4 2","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/nillohit/Desktop/Code/sortfour.c","group":"local","local":true}

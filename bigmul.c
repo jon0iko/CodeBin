@@ -1,46 +1,71 @@
 #include <stdio.h>
-#include <string.h>
+int main()
+{
+    char s1[100];
+    char s2[100];
+    int r[10001] = {0};
+    int m, carry1 = 0, carry2 = 0;
+    scanf(" %s", s1);
+    scanf(" %s", s2);
+    int l1 = 0, l2 = 0;
+    while (s1[l1] != 0)
+    {
+        l1++;
+    }
+    while (s2[l2] != 0)
+    {
+        l2++;
+    }
+    int x = 0;
+    int step = 0;
+    int primary;
+    int scondary;
+    for (int i = l2 - 1; i >= 0; i--)
+    {
 
-// Function to multiply two large integers represented as strings
-char* multiplyLargeIntegers(const char* num1, const char* num2) {
-    int len1 = strlen(num1);
-    int len2 = strlen(num2);
+        x = step;
+        for (int j = l1 - 1; j >= 0; j--)
+        {
+            m = (s1[j] - '0') * (s2[i] - '0');
+            primary = (m + carry1) % 10;
+            int y = r[x];
 
-    // Find the maximum length between the two numbers
-    int maxLength = len1 + len2;
-
-    // Initialize the result array with zeros
-    char result[maxLength + 1];
-    memset(result, '0', maxLength);
-    result[maxLength] = '\0';
-
-    // Perform multiplication
-    for (int i = len1 - 1; i >= 0; i--) {
-        int carry = 0;
-        for (int j = len2 - 1; j >= 0; j--) {
-            int product = (num1[i] - '0') * (num2[j] - '0') + (result[i + j + 1] - '0') + carry;
-            carry = product / 10;
-            result[i + j + 1] = (product % 10) + '0';
+            r[x] = (carry2 + y + primary) % 10;
+            carry1 = (m + carry1) / 10;
+            carry2 = (carry2 + y + primary) / 10;
+            x++;
         }
-        result[i] += carry; // Add the carry to the current position
+        r[x] = carry1 + carry2;
+        carry1 = 0;
+        carry2 = 0;
+        x++;
+
+        step++;
     }
+    r[x - 1] = -1;
+    for (int j = 10000; j >= 0; j--)
+    {
 
-    // Remove leading zeros from the result
-    char* finalResult = result;
-    while (*finalResult == '0' && finalResult[1] != '\0') {
-        finalResult++;
+        if (r[j] == -1)
+        {
+            j--;
+            step = 0;
+            while (j >= 0)
+            {
+
+                if (step == 0 && r[j] == '0')
+                {
+                    continue;
+                }
+                else
+                {
+                    printf("%d", r[j]);
+                }
+
+                step++;
+                j--;
+            }
+            return 0;
+        }
     }
-
-    return finalResult;
-}
-
-int main() {
-    const char* num1 = "123456789012345678901234567890";
-    const char* num2 = "987654321098765432109876543210";
-
-    char* result = multiplyLargeIntegers(num1, num2);
-
-    printf("Result: %s\n", result);
-
-    return 0;
 }
